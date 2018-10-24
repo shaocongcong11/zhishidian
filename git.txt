@@ -1,0 +1,103 @@
+知识点
+
+
+     
+ 1.git 仓库
+
+初始化仓库：git init
+
+	添加文件到仓库：1.git add 
+ 	2.git commit
+查看仓库状态：git status
+查看文件隐藏目录：ls -a 
+查看文件正常目录及文件：ll
+
+
+命令：
+创建文件夹：mkdir 文件夹名	称
+查看文件夹底下隐藏文件：ls -a
+信息添加：echo “git repo2” >> test.txt
+查看文件信息：cat test.txt
+清理工作区域：clear
+
+
+汇	总：
+
+	1.	安装git工具
+
+	2.	创建PHP1803A文件夹  mkdir
+
+	3.	进入php1803A 文件 =》创建demo.txt  =>初始化仓库  （7字母+空格	）=》提交到暂存区 => 提交到仓库 （git  commit 	-m “备注”）版本号
+
+    
+ 	 2.标签
+
+命令：
+查看所有标签  git tag
+
+	创建标签      git tag name
+
+	指定提交信息  git tag -a name -m “comment”
+
+	删除标签      	git tag -d name
+
+	标签发布      git push origin name
+
+实战：
+
+Echo “new code ” >> demo.txt   
+	信息添加
+
+Git status    
+	查看状态
+
+	Git add demo.txt   
+	提交暂存区
+
+Git commit -m ‘new code commit’  备注
+
+Git push   推送
+
+Git tag    
+	查看标签
+
+Git tag haoyun  	创建标签
+
+Git push origin haoyun  推送同步到
+github上边
+
+    
+ 	 3.工作流
+git reset HEAD demo.txt 
+	  重置信息
+Gti status   
+	查看状态
+Git checkout demo.txt 
+	 重新更新文件信息
+Git  
+	查看日志
+git reset --hard 版本号   回滚信息
+
+       
+	4.分支管理
+命令：
+查看分支：git branch
+创建分支：git branch 
+	名字
+切换分支：git checkout 
+	分支名称
+合并代码：git merge 分支名		
+	称
+删除分支: git branch -d 分支名称
+
+
+     
+	 5.远程仓库
+测试：
+echo "# php1804a" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add 	origin https://github.com/haoyunyun888/php1804a.git
+
+git push -u origin master
